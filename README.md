@@ -1,89 +1,89 @@
-<h1 align="center"> [Nombre del Proyecto] </h1>
-<p align="center"><img src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png"/></p> 
+<h1 align="center"> Juego de memoria </h1>
+<p align="center"><img src="https://i.imgur.com/W14ktOv.png"/></p> 
 
 
-## Descripcion  📋
+## Descripción  📋
 ---
-Escribir sobre que trata el proyecto contestando a la pregunta ¿De qué trata el proyecto?
+El proyecto consiste en la implementación de un juego de memoria en el cual el usuario deberá replicar una secuencia de encendido de luces led generada aleatoriamente, pudiendo interactuar con el dispositivo al acercar su mano a los sensores correspondientes.  
+Como ayuda adicional, el juego consta con un altavoz que reproduce una melodía de acuerdo al color que se está activando; esto con el fin de que el usuario asocie un sonido determinado con cada uno de los colores mostrados y aumentar las probabilidades de culminar con éxito el juego.  
+La secuencia se vuelve más larga y más rápida a medida que el usuario avanza de nivel en el juego, lo cual se obtiene al reproducir el patrón de luces mostrado de manera correcta.
 
 
 ## Pre-requisitos  📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+* Arduino IDE
+
+Descargar desde la página oficial en el siguiente enlace.
+```
+https://www.arduino.cc/en/software
+```
+* Librería LiquidCrystalIO
+Esta librería permite controlar y programar la pantalla LCD. Instalar la librería en Arduino IDE, luego incluir la siguiente línea al inicio del código.
 
 ```
-Da un ejemplo
+#include <LiquidCrystalIO.h>
 ```
-
 ## Materiales  📦
-Agregar la lista de materiales necesario para construir el proyecto. Si desean adjuntar los costos de los materiales se puede adicionar
-
 A continuación se muestra una lista de los materiales requeridos, junto con la cantidad y el precio de cada uno:
 
+| MATERIAL                       | CANTIDAD | PRECIO UNIT. | TOTAL INVERTIDO |
+|------------------------------|----------|--------------|-----------------|
+| Microcontrolador Arduino UNO | 1        | 16.00        | 16.00           |
+| Resistor 220 Ω               | 4        | 0.05         | 0.20            |
+| LED                          | 4        | 0.10         | 0.40            |
+| Buzzer pasivo                | 1        | 1.00         | 1.00            |
+| Sensor ultrasónico           | 4        | 3.00         | 12.00           |
+| Protoboard                   | 1        | 4.50         | 4.50            |
+| Cables jumpers macho-macho   | 20       | 0.05         | 1.00            |
+| Cables jumpers macho-hembra  | 20       | 0.05         | 1.00            |
+| Pantalla LCD 16x2            | 1        | 10.00        | 10.00           |
+| Potenciómetro                | 1        | 0.50         | 0.50            |
 
-  Nombre del Material  | Cantidad  | Precio Unitario (USD)  
-|----------------------|-----------|-------------------------
-| Photoresistencia     | 7         | 💲0.30                 |
-| Laser Emit           | 7         | 💲1                    |
-| Arduino UNO          | 2         | 💲15                   |
-| Cableado             | 10 metros | 💲1.50 por metro       |
-
-
-## Total-estimado  💰
+## Total estimado  💰
 
 El costo total estimado del proyecto se calcula sumando los precios de todos los materiales:
 
-Total Estimado: $XX.XX USD 💲
+Total Estimado: $46.60 USD 💲
 
 ## Esquemas 📊
 
-Puedes incluir diagramas, esquemas o gráficos que ayuden a comprender la estructura o funcionamiento de tu proyecto.
+Diagrama esquemático de conexiones electrónicas.
 
-## Instalacion-y-simulacion  🔧
+![Imagen](https://i.imgur.com/7IyBcdv.jpeg)
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-Proporciona instrucciones claras sobre cómo instalar y ejecutar tu proyecto en caso de que sea una aplicación o software. Si es un proyecto que se ejecuta en línea o una simulación, proporciona un enlace directo para acceder a él.
+Diagrama esquemático de conexiones en protoboard.
 
-_Dí cómo será ese paso_
+![Imagen](https://i.imgur.com/wQC87cJ.png)
 
-```
-Da un ejemplo
-```
+Placa de circuito impreso.
 
-_Y repite_
+![Imagen](https://i.imgur.com/8Aeeiib.jpeg)
 
-```
-hasta finalizar
-```
+## Instalación y simulación  🔧
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+Dentro de Arduino IDE, seleccionar el modelo de la placa Arduino utilizada, el puerto en el cual la placa está conectada, y dar al botón "Cargar". Esperar que el código sea subido a la placa. _
 
+![Imagen 1](https://i.imgur.com/mkR073Q.png)
 
+Realizar las conexiones electrónicas de acuerdo al diagrama mostrado. También se puede simular el funcionamiento del proyecto en línea mediante Tinkercad desde [aquí](https://www.tinkercad.com/things/aRTDOBalVUa-juego-de-memoria?sharecode=uhs8TexrqDih92qX-ilAlyZ47JBOxGS82nI4j31XkrI).
+
+![Imagen 2](https://i.imgur.com/wQC87cJ.png)
 
 ## Autores ✒️
 
 _Menciona a todos aquellos que ayudaron a crear el proyecto_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](https://github.com/DarinkaTownsend)
+* **Brank Jobeth Malatay Muñoz** - *Programación, conexiones electrónicas, diseño de case, diseño de PCB*
+* **Irving Ricardo Macias Garzon** - *Programación, conexiones electrónicas*
+* **Beatriz Aurora Quizhpi Torres** - *Programación, conexiones electrónicas*
 
 
-## Video-demostrativo 🎥
-<!-- "Deben subir un video del funcionamiento a esta carpeta con el nombre de su proyecto:
+## Video demostrativo 🎥
 
-https://espolec-my.sharepoint.com/:f:/g/personal/phycom_espol_edu_ec/Ev_QF9sXrLdOnNa4bQGy1gUBHgFZhHeYxoOzzLBM-buHsg?e=SjMYeL
+Puedes encontrar un video demostrativo de este proyecto en [este enlace](https://youtu.be/4xrLBoZ2P94).
 
-No olvidar decirle a su mentor que ya fue subido el video para que el Dep.Proyectos pueda agregar el link en esta sección
-"-->
-Puedes encontrar un video demostrativo de este proyecto en [este enlace](url_del_video).
-
-## Imagenes 📊
+## Imágenes 📊
 
 A continuación, se muestran algunas imágenes del proyecto:
 
-![Imagen 1](url_de_la_imagen_1.png)
-![Imagen 2](url_de_la_imagen_2.png)
-
-## Informacion-adicional ✒️
----
-Esta es la sección que permite agregar más información de contexto al proyecto como alguna web de relevancia, proyectos similares o que hayan usado la misma tecnología.
+![Imagen 1](https://i.imgur.com/W14ktOv.png)
